@@ -1,183 +1,279 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Christian's Portfolio</title>
-    <link href="sass/main.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian's Portfolio</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b7bfa21313.js" crossorigin="anonymous"></script>
+</head>
 <body>
-    <header>
-            <nav class=navbar>
-              <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </a>
-              <div class="navbar-links">
-                <ul>
-                  <li><a href=#about class="nav-link">About</a></li>
-                  <li><a href=#work class="nav-link">Work</a></li>
-                  <li><a href=#contact class="nav-link">Contact</a></li>
-                </ul>
+<!-- NavBar -->
+  <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <div class="container-lg">
+      <a class="navbar-brand text-danger fw-bold fs-2"  href="#">C / A</a>
+      <div class="dropdown">
+        <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end "  aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#about">About</a></li>
+          <li><a class="dropdown-item" href="#portfolio">Projects</a></li>
+          <li><a class="dropdown-item" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- Home -->
+  <section class="home py-5" id="home">
+    <div class="container-lg">
+      <div class="row min-vh-100 align-items-center align-content-center">
+        <div class="col-md-6">
+          <div class="home-img text-center">
+            <img src="chris.jpg" class="rounded-circle mw-100" alt="profile img" >
+          </div>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+          <div class="home-text">          
+            <p>Hello I'm</p>
+            <h1>Christian Angeles</h1>
+            <h2>A Web Developer.</h2>
+            <p>I'm an aspiring front-end developer focused on building beautiful interfaces & experiences.</p>
+            <a href="#portfolio" class="btn btn-danger2 px-3 mt-3">My Work</a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <!-- About -->
+  <section class="about py-5" id="about">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5"> About Me</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-4 mb-3">My name is Christian Angeles, and I’m a California based, self-taught, Web Developer.</h3>
+              <p class>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="row text-center text-uppercase my-3">
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">10</h4>
+                  <p class="text-muted">Projects Completed</p>
+                </div>
               </div>
-            </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main>
-        <section class="intro">
-            <h1 class="intro-hello">Hello!</h1>
-            <h2 class="intro-tagline">I'm
-                <span class="name">Christian Angeles</span>, a design-minded front-end developer focused on building beautiful interfaces &amp; experiences.
-            </h2>
-            <h2 class="intro-link">Let's Connect! <a href="mailto:angeles.chris97@gmail.com">angeles.chris97@gmail.com</a></h2>
-
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-        <section class="about" id="about">
-            <h1 class="about-question">Who am I?</h1>
-            <img src="images/chris.jpg" alt="Christian Angeles">
-            <p class="about-tagline">An
-                <span class="name">Immigrant of Filipino Descent</span>, who once happened to click on 'View Source' of a webpage with genuine curiosity, and now is an aspiring Front-End Developer.
-            </p>
-            <div class="skills-container">
-                <h1 class="skills">Skills</h1>
-                <div class="skills-wrapper">
-                  <ul>
-                    <li><span>HTML5</span></li>
-                    <li><span>Javascript(ES6)</span></li>
-                    <li><span>CSS/SASS</span></li>
-                    <li><span>Github/Git</span></li>
-                    <li><span>FIGMA</span></li>
-                  </ul>
-
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">9</h4>
+                  <p class="text-muted">Happy Clients</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">9</h4>
+                  <p class="text-muted">Positive Review</p>
+                </div>
+              </div>
             </div>
-            </div>
-        </section>
-        <section class="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
-            <div class="portfolio-content">
-                <div class="project-wheel">
-                    <figure class="project-pic">
-                      <a href="" target="_blank">
-                        <img src="images/wheel.png" alt="Wheel of Success Website">
-                      </a>
-                    </figure>
-                    <figcaption class="project-caption">
-                      <div class="project-name">
-                        <a href="" target="_blank">Wheel of Success</a>
-                      </div>
-                      <p>A Game Show App with vanilla JavaScript using arrays, functions, loops, conditionals, and events.</p>
-                    </figcaption>
-                  </div>
-
-                  <div class="project-gallery">
-                    <figure class="project-pic">
-                      <a href="" target="_blank">
-                        <img src="images/gallery.jpg" alt="Photo Gallery Website">
-                      </a>
-                    </figure>
-                    <figcaption class="project-caption">
-                      <div class="project-name">
-                        <a href="" target="_blank">Photo Gallery</a>
-                      </div>
-                      <p>An interactive photo gallery using JavaScript to search and Lightbox plugin for the images. Users search the responsive photo gallery by typing the search box and results are found based on the caption in the photo.</p>
-                    </figcaption>
-                  </div>
-
-                  <div class="project-form">
-                    <figure class="project-pic">
-                      <a href="" target="_blank">
-                        <img src="images/codereview.png" alt="Online Registration Form">
-                      </a>
-                    </figure>
-                    <figcaption class="project-caption">
-                      <div class="project-name">
-                        <a href="" target="_blank">Online Registration Form</a>
-                      </div>
-                      <p>A responsive, mobile-friendly HTML5 form and style with CSS using a mobile-first approach to get more subscribers to The Code Review newsletter.</p>
-                    </figcaption>
-                  </div>
-
-                  <div class="project-directory">
-                    <figure class="project-pic">
-                      <a href="" target="_blank">
-                        <img src="images/directory.png" alt="Employee Directory">
-                      </a>
-                    </figure>
-                    <figcaption class="project-caption">
-                      <div class="project-name">
-                        <a href="" target="_blank">Employee Directory</a>
-                      </div>
-                      <p>Front end employee directory using dynamic data through a public API. When an employee card is clicked on, a modal window appears displaying more information about that employee.</p>
-                    </figcaption>
-                  </div>
-            </div>
-        </section>
-
-
-
-
-        
-        <section class="contact" id="contact">
-
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-copyright">
-          <div class="top">
-            <span>Designed &amp; Developed by</span>
           </div>
-          <div class="middle">
-            <span>Christian Angeles</span>
-            <span>2021</span>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">HTML</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>           
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">CSS</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" style="width:63%"></div>            
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Javascript</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="width:48%"></div>
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Bootstrap</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width:38%"></div>           
+              </div>
+            </div>
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Figma</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width:43%"></div>
+              </div>
+            </div>
           </div>
-          <div class="bottom">
-            <span>Email</span>
-            <span>Github</span>
-            <span>LinkedIn</span>
         </div>
+    </div>
+  </section>
+<!-- Portfolio -->
+  <section class="portfolio py-5" id="portfolio">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Latest Works</h2>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/codereview.jpg" class="w-100 img-thumbnail" alt="Code Review Website">
+            <h3 class="text-capitalize fs-5 my-2">Code Review</h3>
+            <p class="mb-4">A mobile-friendly HTML5 form and style with CSS using a mobile-first approach to get more subscribers to The Code Review newsletter.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-3/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/circles.jpg" class="w-100 img-thumbnail" alt="Circle Kit">
+            <h3 class="text-capitalize fs-5 my-2">Circle Kit</h3>
+            <p class="mb-4">A style guide that acts as your own personal and custom Bootstrap that you can drop into any of your projects to speed up styling, layout and development in general.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-4/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/wheel.jpg" class="w-100 img-thumbnail" alt="Wheel of Success">
+            <h3 class="text-capitalize fs-5 my-2">Wheel of Success</h3>
+            <p class="mb-4"> A browser version of “Wheel of Success”. It uses Javascript to come up with a random phrase that players will try to guess by entering different letters into the program.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-6/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/yourapp.jpg" class="w-100 img-thumbnail" alt="YourApp">
+            <h3 class="text-capitalize fs-5 my-2">YourApp</h3>
+            <p class="mb-4">An interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. It involves creating tables, charts, graphics and other user interface components.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-7/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/gallery.jpg" class="w-100 img-thumbnail" alt="Photo Gallery">
+            <h3 class="text-capitalize fs-5 my-2">Photo Gallery</h3>
+            <p class="mb-4">An interactive photo gallery using JavaScript to search and Lightbox plugin for the images. Users search the responsive photo gallery by typing the search box and results are found based on the caption in the photo.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-5/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/directory.jpg" class="w-100 img-thumbnail" alt="Directory Website">
+            <h3 class="text-capitalize fs-5 my-2">Employee Directory</h3>
+            <p class="mb-4">Front end employee directory using dynamic data through a public API. When an employee card is clicked on, a modal window appears displaying more information about that employee.</p>
+            <p class="mb-4"><a href="https://cangeles21.github.io/techdegree-project-8/" class="text-danger text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Contact -->
+  <section class="contact py-3" id="contact">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Contact Me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4 text-danger">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-muted">angeles.chris97@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item d-flex mb-3">
+            <div class="icon fs-4 text-danger">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5">Phone</h3>
+              <p class="text-muted">+1 	&nbsp;(***)	&nbsp; -	&nbsp; ***	&nbsp; -	&nbsp; ****</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="contact-form">
+            <form action="mailto:christian.angeles21@gmail.com" method="get">
+              <div class="row">
+                <div class="col-lg-6 mb-4">
+                  <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <input type="text" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <textarea rows="5" placeholder="Your Message" class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 mb-4">
+                  <button type="submit" class="btn btn-danger px-3">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="footer border-top py-3 bg-light">
+    <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+              <p class=" navbar-brand m-0 text-danger fw-bold fs-3">C / A Portfolio</p>
+              <div class="social-links">
+                <a href="https://mobile.twitter.com/c_angeles21" class="icon fs-5 text-danger me-2 "><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/christian-angeles-5183b9214/" class="icon fs-5 text-danger me-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/cangeles21" class="icon fs-5 text-danger me-2"><i class="fab fa-github"></i></a>
 
-
-    </footer>
-
-    <script src="js/app.js"></script>
+              </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <p class="m-1  text-danger text-end">Torrance, United States</p>
+            <p class="m-1  text-danger text-end">angeles.chris97@gmail.com</p>
+            <p class="m-1  text-danger text-end">Copyright &copy; 2021</p>
+          </div>
+        </div>
+    </div>
+  </footer>
+<!-- Popup to Top -->
+  <div>
+    <a href="#home">
+        <span class="totop" id="top">
+            <i class="fas fa-angle-up"></i>
+        </span>
+    </a>
+  </div>
+<!-- Javascript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

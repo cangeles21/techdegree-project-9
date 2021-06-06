@@ -1,7 +1,12 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+window.onscroll = function() {
+    displayToTopBtn();
+};
 
-toggleButton.addEventListener('click', () =>  {
-    navbarLinks.classList.toggle('active')
-})
-
+function displayToTopBtn() {
+    const toTheTopBtn = document.getElementById('top');
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTheTopBtn.style.display = 'block';
+    } else {
+        toTheTopBtn.style.display = 'none';
+    }
+}
